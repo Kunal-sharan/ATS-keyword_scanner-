@@ -7,7 +7,7 @@ from langchain_google_genai import GoogleGenerativeAI
 # from st_circular_progress import CircularProgress
 llm = GoogleGenerativeAI(model="gemini-pro", google_api_key=st.secrets['GOOGLE_AI'])
 st.header("ATS(keyword scanner)")
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 file_upload = st.file_uploader("Upload a file", type=["pdf"])
 def get_key_dict(words):
     w=re.findall('\{[^{}]*\}',words)
